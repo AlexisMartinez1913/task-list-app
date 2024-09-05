@@ -3,6 +3,7 @@ import freeCodeCampLogo from './images/freecodecamp-logo.png';
 
 import './App.css'
 import Task from './components/Task';
+import TaskForm from './components/TaskForm';
 
 function App() {
   
@@ -18,8 +19,7 @@ function App() {
       </div>
       <div className='task-list-main'>
         <h1>My Tasks</h1>
-        <Task text='Learn React' />
-
+        <TaskForm />
       </div>
       
     </div>

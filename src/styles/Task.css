@@ -28,3 +28,10 @@
   margin: 5px;
 
 }
+
+/*Tarea completada*/
+.task-container.completed {
+	background-color: #5a02a6;
+	text-decoration: line-through;
+
+}
