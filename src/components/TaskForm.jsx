@@ -23,6 +23,8 @@ function TaskForm(props) {
             completed: false
             
         };
+        //console.log(newTask);
+        props.onSubmit(newTask);
     }
     return (
         <form className="task-form" onSubmit={handleSubmit}>
