@@ -1,14 +1,15 @@
 import '../styles/Task.css';
+import { AiFillCloseCircle } from "react-icons/ai";
 
-function Task({ text }) {
+function Task({ text, completed }) {
     return (
-        <div className="task-container">
+        <div className={completed ? 'task-container completed' : 'task-container'}>
             <div className="task-text">
                 {text}
 
             </div>
-            <div className="task-icon">
-                Eliminar
+            <div className="task-container-icons">
+            <AiFillCloseCircle className="task-icon" />
 
             </div>
 
