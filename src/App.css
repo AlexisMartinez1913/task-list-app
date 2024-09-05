@@ -8,8 +8,16 @@
 html, body {
     color: whitesmoke;
     background-color: #1b1b32;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-top: 40px;
+}
+
+h1 {
+    text-align: center;
+    color: #1b1b32;
+    font-size: 32px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 20px 0;
 }
 
 .task-app {
@@ -30,4 +38,13 @@ html, body {
 .freecodecamp-logo {
     width: 400px;
     height: 50px;
+}
+/* Lista de tareas*/
+.task-list-main {
+    width: 600px;
+    min-height: 500px;
+    background-color: #d0d0d5;
+    padding: 25px;
+    margin: 10px;
+    border-radius: 27px;
 }
