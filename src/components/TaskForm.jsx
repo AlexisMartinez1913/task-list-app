@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "../styles/TaskForm.css";
+import {v4 as uuidv4} from "uuid";
 
 function TaskForm(props) {
 
@@ -17,7 +18,7 @@ function TaskForm(props) {
         e.preventDefault();
         //console.log("enviando");
         const newTask = {
-            id: '1',
+            id: uuidv4(),
             text: input,
             completed: false
             
