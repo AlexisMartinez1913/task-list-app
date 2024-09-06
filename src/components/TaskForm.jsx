@@ -26,6 +26,7 @@ function TaskForm(props) {
         //console.log(newTask);
         //enviar objeto como prop
         props.onSubmit(newTask);
+        setInput('');
     }
     return (
         <form className="task-form" onSubmit={handleSubmit}>
@@ -34,6 +35,7 @@ function TaskForm(props) {
             className="task-input"
             placeholder="Write a Task"
             name="text"
+            value={input}
             onChange={handleChange}
             />
             <button className="task-button">Add Task</button>

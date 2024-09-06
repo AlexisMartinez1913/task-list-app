@@ -7,7 +7,7 @@ function TasksList() {
     const [tasks, setTasks] = useState([]);
 
     const addTask = task => {
-        console.log(task);
+        //console.log(task);
         if (task.text.trim()) {
             task.text = task.text.trim();
             const updatedTasks = [task, ...tasks];
