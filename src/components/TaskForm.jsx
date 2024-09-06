@@ -24,6 +24,7 @@ function TaskForm(props) {
             
         };
         //console.log(newTask);
+        //enviar objeto como prop
         props.onSubmit(newTask);
     }
     return (
