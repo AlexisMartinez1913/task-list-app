@@ -15,6 +15,13 @@ function TasksList() {
         }
     };
 
+    const deleteTask = id => {
+        //Si el task.id coincide con el id pasado, esa tarea será excluida del nuevo array.
+        const updatedTasks = tasks.filter(task => task.id !== id);
+        setTasks(updatedTasks);
+
+    };
+
     return (
         <>
             <TaskForm onSubmit={addTask} />
@@ -26,6 +33,7 @@ function TasksList() {
                             id={task.id}
                             text={task.text}
                             completed={task.completed}
+                            deleteTask={deleteTask}
                         />
 
                     )
